@@ -1,0 +1,19 @@
+{
+    "logogmail": "./src/assets/img/logos_google-gmail.png",
+    "logogithub": "./src/assets/img//mdi_github.png",
+    "logolinkin": "./src/assets/img//mdi_linkedin.png",
+    "coretan": "./src/assets/img/coretan.png",
+    "htmllogo": "./src/assets/img/logos_html-5.png",
+    "tailwindlogo": "./src/assets/img/mdi_tailwind.png",
+    "jslogo": "./src/assets/img/logos_javascript.png",
+    "csslogo": "./src/assets/img/mdi_css.png",
+    "javalogo": "./src/assets/img/mdi_java.png",
+    "reactlogo": "./src/assets/img/mdi_react.png",
+    "laravellogo": "./src/assets/img/mdi_laravel.png",
+    "bootstarplogo": "./src/assets/img/mdi_bootstrap.png",
+    "project1": "./src/assets/img/healthtech.png",
+    "journey1": "./src/assets/img/praktikum.jpg",
+    "journey2": "./src/assets/img/imro.jpg",
+    "journey3": "./src/assets/img/webcompe.jpg",
+    "starlogo": "./src/assets/img/material-symbols_star.png"
+}

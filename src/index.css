@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes borderRotateOrange {
+    0%, 100% {
+        border-color: #f97316 transparent transparent transparent;
+    }
+    25% {
+        border-color: transparent #f97316 transparent transparent;
+    }
+    50% {
+        border-color: transparent transparent #f97316 transparent;
+    }
+    75% {
+        border-color: transparent transparent transparent #f97316;
+    }
+}
+@keyframes borderRotateBlue {
+    0%, 100% {
+        border-color: #0ea5e9 transparent transparent transparent;
+    }
+    25% {
+        border-color: transparent #0ea5e9 transparent transparent;
+    }
+    50% {
+        border-color: transparent transparent #0ea5e9 transparent;
+    }
+    75% {
+        border-color: transparent transparent transparent #0ea5e9;
+    }
+}
+@keyframes borderRotateYellow {
+    0%, 100% {
+        border-color: yellow transparent transparent transparent;
+    }
+    25% {
+        border-color: transparent yellow transparent transparent;
+    }
+    50% {
+        border-color: transparent transparent yellow transparent;
+    }
+    75% {
+        border-color: transparent transparent transparent yellow;
+    }
+}
+@keyframes borderRotatePurple {
+    0%, 100% {
+        border-color: #a855f7 transparent transparent transparent;
+    }
+    25% {
+        border-color: transparent #a855f7 transparent transparent;
+    }
+    50% {
+        border-color: transparent transparent #a855f7 transparent;
+    }
+    75% {
+        border-color: transparent transparent transparent #a855f7;
+    }
+}
+@keyframes rotateStar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-border-orange {
+    border-width: 4px;
+    border-style: solid;
+    animation: borderRotateOrange 1.9s linear infinite;
+}
+.animate-border-blue {
+    border-width: 4px;
+    border-style: solid;
+    animation: borderRotateBlue 1.9s linear infinite;
+}
+.animate-border-yellow {
+    border-width: 4px;
+    border-style: solid;
+    animation: borderRotateYellow 1.9s linear infinite;
+}
+.animate-border-purple {
+    border-width: 4px;
+    border-style: solid;
+    animation: borderRotatePurple 1.9s linear infinite;
+}
+.animate-rotate-star {
+    animation: rotateStar 3s linear infinite;
+}
