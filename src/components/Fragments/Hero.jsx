@@ -5,7 +5,7 @@ export default function Hero(props) {
         <main id="home" className="flex h-screen bg-gradient-to-tr from-white via-white to-sky-300 px-5 z-0">
             {/* nanti akan diisi form guest saat diawal pages */}
             <div className="container m-auto flex flex-col justify-center items-center w-max gap-y-5">
-                <h1 className="text-4xl lg:text-5xl  text-purple-600 font-bold">Hello Guest,</h1>
+                <h1 className="text-4xl lg:text-5xl  text-purple-600 font-bold">Hello Guys👋,</h1>
                 <h2 className="text-4xl lg:text-6xl text-purple-600 font-semibold">I am Niko Achmad</h2>
                 <div className="flex gap-x-5 xl:gap-x-6 justify-center">
                     <div className="relative w-[40%] lg:w-full">
