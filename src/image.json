@@ -1,0 +1,22 @@
+{
+    "logo": "/logo.png",
+    "akudewe": "/akudewe.png",
+    "akudewecard": "/akudewe2.png",
+    "logogmail": "/logos_google-gmail.png",
+    "logogithub": "/mdi_github.png",
+    "logolinkin": "/mdi_linkedin.png",
+    "coretan": "/coretan.png",
+    "htmllogo": "/logos_html-5.png",
+    "tailwindlogo": "/mdi_tailwind.png",
+    "jslogo": "/logos_javascript.png",
+    "csslogo": "/mdi_css.png",
+    "javalogo": "/mdi_java.png",
+    "reactlogo": "/mdi_react.png",
+    "laravellogo": "/mdi_laravel.png",
+    "bootstraplogo": "/mdi_bootstrap.png",
+    "project1": "/healthtech.png",
+    "journey1": "/praktikum.jpg",
+    "journey2": "/imro.jpg",
+    "journey3": "/webcompe.jpg",
+    "starlogo": "/material-symbols_star.png"
+}

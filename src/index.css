@@ -1,6 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root:has(.no-doc-scroll) {
+    overflow:hidden;
+}
+@font-face {
+    font-family: 'hackbotFont';
+    src: url('/src/assets/font/HackbotFreeTrial.ttf') format('truetype');
+}
+
 @keyframes borderRotateOrange {
     0%, 100% {
         border-color: #f97316 transparent transparent transparent;
@@ -88,4 +97,49 @@
 }
 .animate-rotate-star {
     animation: rotateStar 3s linear infinite;
+}
+
+/* From Uiverse.io by Creatlydev */ 
+.toggle {
+    background-color: #7dd4fc;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 50px 20px rgba(0, 0, 0, .1);
+    line-height: 1;
+    transition: background-color 500ms; /* Tambahkan transisi untuk smooth effect */
+}
+
+.input {
+    display: none;
+}
+
+.icon {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    transition: transform 500ms;
+}
+
+.icon--sun {
+    transition-delay: 200ms;
+}
+
+.icon--moon {
+    transform: scale(0);
+}
+
+#switch:checked + .toggle {
+    background-color: #000;
+}
+
+#switch:checked + .toggle .icon--sun {
+    transform: rotate(360deg) scale(0);
+}
+
+#switch:checked + .toggle .icon--moon {
+    transition-delay: 200ms;
+    transform: scale(1) rotate(360deg);
 }
