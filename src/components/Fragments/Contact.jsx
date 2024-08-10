@@ -22,7 +22,7 @@ export default function Contact(props) {
                 </div>
                 <div className="lg:w-1/2">
                     <h4 className="text-gray-950 text-center py-5 text-lg lg:text-2xl">Have a question or project you'd like to discuss? Send me a message and I'll get back to you soon!😁</h4>
-                    <form className="relative flex flex-col gap-5" action="">
+                    <div className="relative flex flex-col gap-5" action="">
                         <input className="border-2 rounded-lg pl-3 py-2 w-full " type="text" name="guestname" id="" placeholder="Your Name" required />
                         <input className="border-2 rounded-lg pl-3 py-2 w-full " type="email" name="guestname" id="" placeholder="Your Email" required />
                         <input className="border-2 rounded-lg pl-3 py-2 w-full " type="text" name="guestname" id="" placeholder="Subjects" required />
@@ -55,7 +55,7 @@ export default function Contact(props) {
                                 </defs>
                             </svg>
                         </button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </section>
