@@ -92,7 +92,7 @@ export default function Header() {
                 )}
 
 
-                <div className="fixed right-3 md:block flex justify-center items-center z-50">
+                <div className="fixed right-3 md:relative md:right-0 flex justify-center items-center z-50">
                     <input id="switch" className="sr-only input" type="checkbox" onChange={handleDarkMode} />
                     <label className="toggle relative bg-white w-14 h-14 rounded-full grid place-items-center cursor-pointer shadow-[0_0_50px_20px_rgba(0,0,0,0.1)]" htmlFor="switch">
                         <div className="icon icon--moon absolute transition-transform duration-500 delay-200 scale-0">
