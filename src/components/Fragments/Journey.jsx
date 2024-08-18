@@ -4,10 +4,10 @@ import JourneyText from "../Elements/JourneyText";
 import SeparatorStar from "../Elements/SeparatorStar";
 export default function Journey() {
     return (
-        <section id="journey" className="2xl:px-72 xl:px-48 px-5">
+        <section id="journey" className="2xl:px-72 xl:px-48 px-5 dark:bg-slate-800">
             <TittleContent variant={"text-sky-600"} tittletext={"💫My Journey"} />
-            <h3 className="text-gray-950 text-center lg:text-left text-2xl">This is the journey and experience that I have carried out while being a front end web developer</h3>
-            <div className="container my-10">
+            <h3 className="text-gray-950 text-center lg:text-left text-2xl dark:text-slate-50">This is the journey and experience that I have carried out while being a front end web developer</h3>
+            <div className="container py-10">
                 <div className="flex flex-col lg:flex-row">
                     <div className="w-full md:w-1/2 py-5">
                         <img className="rounded-2xl"
@@ -25,7 +25,7 @@ export default function Journey() {
                             alt="j2" />
                     </div>
                     <SeparatorStar />
-                    <JourneyText rank={"4th "} rankcolor={"text-slate-700"} journeyname={"Winner IOT General"} journeydesc={"I took part in the IMRO 2024 competition at STKIP Modern Ngawi in the general IoT category as a Front End Web Developer. My task in the team is to create a web application interface for our team's IoT product, namely smart mirror, the framework that our team uses for web application development is Laravel because it is easy and fast to develop."} journeytime={"October 2023"} />
+                    <JourneyText rank={"4th "} rankcolor={"text-slate-700 dark:text-slate-400"} journeyname={"Winner IOT General"} journeydesc={"I took part in the IMRO 2024 competition at STKIP Modern Ngawi in the general IoT category as a Front End Web Developer. My task in the team is to create a web application interface for our team's IoT product, namely smart mirror, the framework that our team uses for web application development is Laravel because it is easy and fast to develop."} journeytime={"October 2023"} />
                 </div>
 
                 <div className="flex flex-col lg:flex-row">

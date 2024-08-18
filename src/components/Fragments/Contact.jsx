@@ -2,7 +2,7 @@ import TittleContent from "../Elements/TittleContent";
 import image from "/src/image";
 export default function Contact(props) {
     return (
-        <section id="contact" className="2xl:px-72 xl:px-48 px-5">
+        <section id="contact" className="2xl:px-72 xl:px-48 px-5 dark:bg-slate-800 pb-10">
             <TittleContent variant={"text-sky-600"} tittletext={"📲Contact Me"} />
             <div className="container lg:flex justify-between items-center">
 
@@ -21,7 +21,7 @@ export default function Contact(props) {
                     <img className="group-hover:scale-125 duration-500 absolute -bottom-0.5 -right-0 h-48 z-10 -my-2" src={image.akudewecard} alt="" />
                 </div>
                 <div className="lg:w-1/2">
-                    <h4 className="text-gray-950 text-center py-5 text-lg lg:text-2xl">Have a question or project you'd like to discuss? Send me a message and I'll get back to you soon!😁</h4>
+                    <h4 className="text-gray-950 dark:text-slate-50 text-center py-5 text-lg lg:text-2xl">Have a question or project you'd like to discuss? Send me a message and I'll get back to you soon!😁</h4>
                     <p className="text-red-500">* this form is under maintenance</p>
                     <div className="relative flex flex-col gap-5" action="">
                         <input className="border-2 rounded-lg pl-3 py-2 w-full " type="text" name="guestname" id="" placeholder="Your Name" required />

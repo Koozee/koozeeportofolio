@@ -1,7 +1,7 @@
 export default function Footer() {
 
     return (
-        <footer className="2xl:px-72 xl:px-48 bg-slate-800/90 mt-20">
+        <footer className="2xl:px-72 xl:px-48 bg-slate-800/90">
             <div className="container py-10">
                 <p className="text-slate-50 text-center font-semibold text-4xl">Koozee</p>
                 <p className="text-slate-50 text-center font-semibold text-4xl py-5">Follow Me</p>

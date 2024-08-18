@@ -120,7 +120,7 @@
 .icon {
     grid-column: 1 / 1;
     grid-row: 1 / 1;
-    transition: transform 500ms;
+    transition: transform 200ms;
 }
 
 .icon--sun {
@@ -132,7 +132,7 @@
 }
 
 #switch:checked + .toggle {
-    background-color: #000;
+    background-color: rgb(30, 41, 49);
 }
 
 #switch:checked + .toggle .icon--sun {
@@ -140,6 +140,6 @@
 }
 
 #switch:checked + .toggle .icon--moon {
-    transition-delay: 200ms;
+    transition-delay: 100ms;
     transform: scale(1) rotate(360deg);
 }
