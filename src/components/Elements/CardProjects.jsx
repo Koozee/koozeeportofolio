@@ -6,7 +6,6 @@ export default function CardProjects(props) {
             <div className="flex justify-between">
                 <div className="flex gap-3 p-3">
                     <img className="w-9 h-9" src={image.logogithub} alt="" />
-                    <img className="w-9 h-9" src={image.logogithub} alt="" />
                 </div>
                 <div className="flex gap-3 p-3">
                     <img className="w-9 h-9" src={props.tech1} alt="" />
