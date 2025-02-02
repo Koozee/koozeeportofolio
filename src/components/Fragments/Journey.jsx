@@ -8,6 +8,17 @@ export default function Journey() {
             <TittleContent variant={"text-sky-600"} tittletext={"💫My Journey"} />
             <h3 className="text-gray-950 text-center lg:text-left text-2xl dark:text-slate-50">This is the journey and experience that I have carried out while being a front end web developer</h3>
             <div className="container py-10">
+
+            <div className="flex flex-col lg:flex-row-reverse">
+                    <div className="w-full md:w-1/2 py-5">
+                        <img className="rounded-2xl"
+                            src={image.journey4}
+                            alt="j2" />
+                    </div>
+                    <SeparatorStar />
+                    <JourneyText rankcolor={"text-slate-700 dark:text-slate-400"} journeyname={"AWS Certification | Full Stack Cloud Engineering "} journeydesc={"I am a participant in MSIB Batch 7 in the field of AWS Certification | Full Stack Cloud Engineering at the Social Economic Accelerator Lab (SEAL). At MSIB I learned a lot about DevOps and also Cloud Computing, namely AWS. After studying for 3 months, I as DevOps Lead and Full Stack Programmer with the team succeeded in creating a web app called Pasar Malangan which was built on AWS infrastructure and used MERN Stack technology."} journeytime={"September 2024 – December 2024"} />
+                </div>
+
                 <div className="flex flex-col lg:flex-row">
                     <div className="w-full md:w-1/2 py-5">
                         <img className="rounded-2xl"
@@ -37,6 +48,7 @@ export default function Journey() {
                     <SeparatorStar />
                     <JourneyText rank={"1st "} rankcolor={"text-yellow-400"} journeyname={"Winner Web Design Competition"} journeydesc={`I created a landing page web design using HTML, TailwindCSS and JavaScript technology with the theme "Entrepreneurship and Health" and I gave the web title the name HealthTech. This is my first project as a front end web developer and I am trying to submit it to a competition at Widya Husada University Semarang for Indonesia's 78th anniversary.`} journeytime={"August 2023"} />
                 </div>
+                
             </div>
         </section>
     )
