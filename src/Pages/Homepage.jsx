@@ -6,18 +6,20 @@ import Contact from "../components/Fragments/Contact";
 import Footer from "../components/Fragments/Footer";
 import Hero from "../components/Fragments/Hero";
 import Header from "../components/Fragments/Header";
+import Chatbot from "../components/Elements/ChatBot";
 
 export default function Homepage() {
-    return (
-        <>
-            <Header />
-            <Hero />
-            <About />
-            <Projects />
-            <Skills />
-            <Journey />
-            <Contact />
-            <Footer />
-        </>
-    )
+  return (
+    <>
+      <Header />
+      <Hero />
+      <About />
+      <Projects />
+      <Skills />
+      <Journey />
+      <Contact />
+      <Chatbot />
+      <Footer />
+    </>
+  );
 }

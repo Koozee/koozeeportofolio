@@ -44,7 +44,7 @@ export default function Header() {
                         {isOpen ? <X size={36} /> : <Menu size={36} />}
                     </button>
                     <a href="#">
-                        <img className="hidden md:block w-full" src={image.logo} alt="logo" />
+                        <img className="hidden md:block md:w-10/12 2xl:w-full" src={image.logo} alt="logo" />
                     </a>
                 </div>
                 <nav className="z-50 hidden md:block top-[9%] w-screen md:relative md:top-0 md:w-max dark:bg-slate-800 bg-slate-100 md:bg-sky-300 px-5 md:rounded-full drop-shadow-xl md:shadow-sky-400/30">
