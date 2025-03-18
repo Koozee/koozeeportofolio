@@ -1,13 +1,15 @@
+import { motion } from "framer-motion";
+
 export default function SeparatorStar() {
     return (
-        <div className="relative hidden lg:block bg-yellow-500 w-[2px] mx-10 z-0">
+        <div className="relative left-4 hidden lg:block w-[2px] mx-10 z-0">
             <svg
                 width={48}
                 height={48}
                 viewBox="0 0 48 48"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-12 h-12 absolute top-1/2 -left-6 transform -translate-y-1/2 z-50 animate-rotate-star"
+                className="w-12 h-12 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 animate-rotate-star"
                 preserveAspectRatio="xMidYMid meet"
             >
                 <path

@@ -20,7 +20,7 @@ export default function Footer() {
                     </a>
                 </div>
                 <hr />
-                <p className="text-slate-50 font-semibold pt-4 text-lg pl-5">© Niko Achmad 2024</p>
+                <p className="text-slate-50 font-semibold pt-4 text-lg pl-5">© Niko Achmad 2025</p>
             </div>
         </footer>
     )

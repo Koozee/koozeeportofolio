@@ -1,6 +1,14 @@
+import { motion } from "framer-motion";
+
 export default function JourneyText(props) {
     return (
-        <div className="text-wrap w-full lg:w-1/2 lg:pl-7 py-5">
+        <motion.div 
+            className="text-wrap w-full lg:w-1/2 lg:pl-7 py-5 flex flex-col justify-center"
+            initial={{ x: props.isEven ? 100 : -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+        >
             <p className="text-gray-950 dark:text-slate-50 text-start text-lg lg:text-2xl 2xl:text-3xl font-semibold">
                 <span className={`${props.rankcolor} font-bold`}>{props.rank}</span>
                 {props.journeyname}
@@ -11,6 +19,6 @@ export default function JourneyText(props) {
             <p className="text-gray-950 dark:text-slate-50 text-lg font-bold mt-10">
                 {props.journeytime}
             </p>
-        </div>
+        </motion.div>
     )
 }

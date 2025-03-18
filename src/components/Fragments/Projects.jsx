@@ -1,6 +1,7 @@
 import TittleContent from "../Elements/TittleContent";
 import CardProjects from "../Elements/CardProjects";
 import image from "/src/image";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   const projects = [
@@ -42,32 +43,55 @@ export default function Projects() {
   ];
 
   return (
-    <section
-      id="project"
+    <motion.section
+      id="projects"
       className="2xl:px-72 xl:px-48 px-5 py-10 dark:bg-slate-800"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
     >
       <TittleContent
         variant={"text-sky-600"}
         tittletext={"🚀Amazing Project"}
       />
-      <h3 className="text-gray-950 text-xl xl:text-2xl text-justify xl:text-center dark:text-slate-50">
+      <motion.h3 
+        className="text-gray-950 text-xl xl:text-2xl text-justify xl:text-center dark:text-slate-50"
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         As a frontend web developer, I have worked on various projects that
         showcase my skills and creativity. Explore my work and see how I turn
         ideas into amazing web experiences.
-      </h3>
-      <div className="container mt-16">
+      </motion.h3>
+      <motion.div 
+        className="container mt-16"
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <div className="xl:grid grid-cols-2 gap-10">
           {projects.map((project, index) => (
-            <CardProjects
+            <motion.div
               key={index}
-              imgproject={project.imgproject}
-              techs={project.techs}
-              projectname={project.projectname}
-              projectdesc={project.projectdesc}
-            />
+              initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: index * 0.2, ease: "easeOut" }}
+            >
+              <CardProjects
+                imgproject={project.imgproject}
+                techs={project.techs}
+                projectname={project.projectname}
+                projectdesc={project.projectdesc}
+              />
+            </motion.div>
           ))}
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
