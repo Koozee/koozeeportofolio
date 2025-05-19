@@ -26,10 +26,37 @@ export default function Journey() {
         front end web developer
       </motion.h3>
       <div className="container py-10 relative">
+        {/* garis batas */}
         <div className="absolute left-1/2 top-0 bottom-0 hidden lg:block">
           <div className="relative h-full bg-yellow-500 w-[2px] mx-10"></div>
         </div>
+
         <div className="flex flex-col gap-20">
+          <div className="flex flex-col lg:flex-row">
+            <motion.div
+              className="w-full md:w-1/2 py-5 lg:pr-16"
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              <motion.img
+                className="rounded-2xl"
+                src={image.journey5}
+                alt={image.journey5}
+              />
+            </motion.div>
+            <SeparatorStar />
+            <JourneyText
+              isEven={false}
+              rank={"1st "}
+              rankcolor={"text-yellow-400"}
+              journeyname={"Winner Web Development Competition 2025"}
+              journeydesc={`Together with the Gedang Goreng MIS team, I won the Web Design Competition (WDC) 2025 at iFest#14 Atma Jaya University Yogyakarta. Our project, Beli Ga’ya, is a web platform that raises the issue of sustainable fashion, in line with the theme "Stitchloop: Where Every Thread Tells A New Story". Through Beli Ga’ya, we invite users to be more aware of the stories, values, and environmental impacts of every fashion choice they make.`}
+              journeytime={"April 2025"}
+            />
+          </div>
+
           <div className="flex flex-col lg:flex-row-reverse relative">
             <motion.div
               className="w-full md:w-1/2 py-5 lg:pl-16"

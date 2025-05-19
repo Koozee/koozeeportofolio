@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { motion } from "framer-motion";
 import image from "/src/image";
 
 export default function Header() {
@@ -73,7 +74,10 @@ export default function Header() {
   };
 
   return (
-    <header
+    <motion.header
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
       className={`fixed transition-all duration-500 ease-in-out 
             py-3 lg:py-4 px-4 md:px-10 lg:px-24 w-full h-max z-50
             ${
@@ -105,7 +109,12 @@ export default function Header() {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:block">
+        <motion.nav
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
+          className="hidden md:block"
+        >
           <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-full px-6 py-2 shadow-lg">
             <ul className="flex items-center gap-6 lg:gap-8">
               {["Home", "About Me", "Projects", "Journey", "Contact"].map(
@@ -129,17 +138,17 @@ export default function Header() {
               )}
             </ul>
           </div>
-        </nav>
+        </motion.nav>
 
         {/* Mobile Navigation */}
-        <nav
-          className={`
-                    fixed md:hidden top-0 left-0 h-screen w-3/4 max-w-sm
+        <motion.nav
+          initial={{ x: '-100%' }}
+          animate={{ x: isOpen ? '0%' : '-100%' }}
+          transition={{ duration: 0.3 }}
+          className={`fixed md:hidden top-0 left-0 h-screen w-3/4 max-w-sm
                     bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shadow-2xl
                     transform transition-transform duration-300 ease-in-out
-                    ${isOpen ? "translate-x-0" : "-translate-x-full"}
-                    pt-24 px-6 z-50
-                `}
+                    pt-24 px-6 z-50`}
         >
           {/* Tombol Close */}
           <button
@@ -188,7 +197,7 @@ export default function Header() {
               )
             )}
           </ul>
-        </nav>
+        </motion.nav>
 
         {/* Dark Mode Toggle */}
         <div className="relative z-50">
@@ -234,6 +243,6 @@ export default function Header() {
           </label>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 }

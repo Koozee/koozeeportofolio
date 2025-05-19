@@ -57,7 +57,7 @@ export default function Contact() {
             <p className="text-base">Frontend Developer</p>
           </div>
           <a
-            href="https://drive.google.com/file/d/12YW7KEGZbroxvaCQBJNLlEl-LPMrkKpA/view?usp=sharing"
+            href="https://drive.google.com/file/d/1WGYVFGqVu8iW2OtJ5nFKviXJPuCw2OHi/view?usp=sharing"
             target="_blank"
             className="duration-300 hover:bg-sky-900 border hover:text-gray-50 bg-gray-50 font-semibold text-sky-800 px-3 py-2 flex flex-row items-center gap-3"
           >

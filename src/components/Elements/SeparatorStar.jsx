@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 export default function SeparatorStar() {
     return (
         <div className="relative left-4 hidden lg:block w-[2px] mx-10 z-0">
